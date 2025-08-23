@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Mughees - Senior Laravel Developer</title>
+    <meta name="description" content="Senior Laravel Developer specializing in full-stack web applications, payment integrations, and modern web solutions">
+    <meta name="keywords" content="Laravel, PHP, Full Stack Developer, Payment Integration, API Development, Vue.js, React, MySQL, PostgreSQL">
+    <meta name="author" content="Muhammad Mughees">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#0f0f23">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="code-animation">
+                <span>&lt;</span>
+                <span>M</span>
+                <span>u</span>
+                <span>g</span>
+                <span>h</span>
+                <span>e</span>
+                <span>e</span>
+                <span>s</span>
+                <span>/</span>
+                <span>&gt;</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-name">M.Mughees</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="code-rain"></div>
+            <div class="floating-shapes"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello World! I'm</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="typewriter" data-text="Muhammad Mughees"></span>
+                </h1>
+                <div class="hero-titles">
+                    <span class="title-static">Senior</span>
+                    <span class="title-dynamic" id="dynamic-title"></span>
+                </div>
+                <p class="hero-description">
+                    Passionate full-stack developer with <strong>5+ years</strong> of experience crafting 
+                    scalable web applications, payment systems, and modern digital solutions using Laravel, 
+                    Vue.js, and cutting-edge technologies.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        <span>View My Work</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Let's Connect</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-frame">
+                        <div class="profile-image">
+                            <!-- Space for your profile image -->
+                            <img src="assets/profile/muhgees.png" alt="Muhammad Mughees" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <div class="profile-status">
+                            <div class="status-dot"></div>
+                            <span>Available for work</span>
+                        </div>
+                    </div>
+                    <div class="floating-tech">
+                        <div class="tech-item" style="--delay: 0s"><i class="fab fa-laravel"></i></div>
+                        <div class="tech-item" style="--delay: 0.5s"><i class="fab fa-php"></i></div>
+                        <div class="tech-item" style="--delay: 1s"><i class="fa-brands fa-vuejs"></i></div>
+                        <div class="tech-item" style="--delay: 1.5s"><i class="fab fa-react"></i></div>
+                        <div class="tech-item" style="--delay: 2s"><i class="fab fa-js-square"></i></div>
+                        <div class="tech-item" style="--delay: 2.5s"><i class="fab fa-bootstrap"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">01.</span>
+                    About Me
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro-text">
+                        Hi! I'm Muhammad Mughees, a passionate <strong>Senior Laravel Developer</strong> based in 
+                        Lahore, Pakistan. My journey in web development started over 5 years ago, and I've been 
+                        creating exceptional digital experiences ever since.
+                    </p>
+                    <p>
+                        I specialize in building scalable web applications, implementing complex payment integrations, 
+                        and developing robust APIs. My expertise spans across the entire development lifecycle, 
+                        from planning and architecture to deployment and maintenance.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
+                        projects, or mentoring junior developers in the Laravel community.
+                    </p>
+                    
+                    <div class="expertise-areas">
+                        <h3>Areas of Expertise:</h3>
+                        <ul class="expertise-list">
+                            <li><i class="fas fa-check"></i> Laravel Web Development</li>
+                            <li><i class="fas fa-check"></i> Payment Gateway Integration</li>
+                            <li><i class="fas fa-check"></i> RESTful API Development</li>
+                            <li><i class="fas fa-check"></i> Admin Dashboard Development</li>
+                            <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+                            <li><i class="fas fa-check"></i> Application Debugging & Troubleshooting</li>
+                            <li><i class="fas fa-check"></i> Cloud Deployment & DevOps</li>
+                            <li><i class="fas fa-check"></i> Database Design & Optimization</li>                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-achievements">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>50+ Projects</h4>
+                            <p>Successfully delivered projects</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>40+ Happy Clients</h4>
+                            <p>Satisfied customers worldwide</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>5 Years Experience</h4>
+                            <p>Professional development</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>100+ Contributions</h4>
+                            <p>Open source projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">02.</span>
+                    Skills & Technologies
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-laravel"></i>
+                                    <span class="skill-name">Laravel</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-php"></i>
+                                    <span class="skill-name">PHP</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-cogs"></i>
+                                    <span class="skill-name">RESTful APIs</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span class="skill-name">Authentication & Security</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="93%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-layer-group"></i>
+                            <h3>Frontend & Database</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-vue"></i>
+                                    <span class="skill-name">Vue.js</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-react"></i>
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-js-square"></i>
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span class="skill-name">CSS3/SCSS</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-database"></i>
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-table"></i>
+                                    <span class="skill-name">Database Design</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Development Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span class="skill-name">Git/GitHub</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-terminal"></i>
+                                    <span class="skill-name">Composer</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-code"></i>
+                                    <span class="skill-name">VS Code</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-bug"></i>
+                                    <span class="skill-name">Debugging</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-desktop"></i>
+                                    <span class="skill-name">Postman</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-vial"></i>
+                                    <span class="skill-name">PHPUnit Testing</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-credit-card"></i>
+                            <h3>Payment Integration</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-stripe"></i>
+                                    <span class="skill-name">Stripe</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-paypal"></i>
+                                    <span class="skill-name">PayPal</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-money-check-alt"></i>
+                                    <span class="skill-name">Razorpay</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-coins"></i>
+                                    <span class="skill-name">Square</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-layer-group"></i>
+                            <h3>Laravel Ecosystem</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-route"></i>
+                                    <span class="skill-name">Laravel Routing</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-eye"></i>
+                                    <span class="skill-name">Blade Templates</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="93%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span class="skill-name">Authentication</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="skill-name">Mail & Notifications</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-clock"></i>
+                                    <span class="skill-name">Job Queues</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-file-upload"></i>
+                                    <span class="skill-name">File Storage</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>CSS Frameworks</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-bootstrap"></i>
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-wind"></i>
+                                    <span class="skill-name">Tailwind CSS</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-palette"></i>
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">03.</span>
+                    Professional Experience
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior Laravel Developer</h3>
+                        <h4>Cyphersol Solutions</h4>
+                        <p>Working as part of a collaborative development team while also handling many individual projects. Specializing in debugging complex issues, creating general solution websites, admin dashboards, and comprehensive Laravel applications with API integrations for React and Flutter developers.</p>
+                        <ul>
+                            <li>Expert in debugging and troubleshooting complex Laravel applications</li>
+                            <li>Created 30+ general solution websites and custom web applications</li>
+                            <li>Built comprehensive admin dashboards with advanced functionality</li>
+                            <li>Developed robust RESTful APIs for React and Flutter applications</li>
+                            <li>Collaborated effectively with team members on large-scale projects</li>
+                            <li>Successfully completed numerous solo projects from concept to deployment</li>
+                            <li>Integrated multiple payment gateways and third-party services</li>
+                            <li>Implemented real-time features using WebSockets and broadcasting</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>Vue.js</span>
+                            <span>React</span>
+                            <span>Flutter APIs</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">04.</span>
+                    Featured Projects
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+                <button class="filter-btn" data-filter="payment">Payment Systems</button>
+                <button class="filter-btn" data-filter="api">APIs</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- E-commerce Projects -->
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <div class="project-gallery">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&auto=format" alt="E-commerce Platform" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-btn" onclick="openGallery('ecommerce1')">
+                                    <i class="fas fa-images"></i>
+                                    View Gallery
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-live">Live</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-commerce Platform</div>
+                        <h3>Advanced Multi-Vendor Marketplace</h3>
+                        <p>A comprehensive e-commerce platform supporting multiple vendors, advanced inventory management, and integrated payment processing with Stripe and PayPal.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Multi-vendor system</span>
+                            <span><i class="fas fa-check"></i> Payment integration</span>
+                            <span><i class="fas fa-check"></i> Inventory management</span>
+                            <span><i class="fas fa-check"></i> Admin dashboard</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Vue.js</span>
+                            <span>MySQL</span>
+                            <span>Stripe</span>
+                            <span>PayPal</span>
+                            <span>AWS S3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" data-tooltip="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" data-tooltip="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <button class="project-link" data-tooltip="View Details" onclick="openProjectModal('ecommerce1')">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Projects -->
+                <div class="project-card" data-category="dashboard">
+                    <div class="project-image">
+                        <div class="project-gallery">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Analytics Dashboard" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-btn" onclick="openGallery('dashboard1')">
+                                    <i class="fas fa-images"></i>
+                                    View Gallery
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-live">Live</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Business Dashboard</div>
+                        <h3>Real-time Analytics Dashboard</h3>
+                        <p>Interactive business intelligence dashboard with real-time data visualization, custom reports, and advanced filtering capabilities.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Real-time data</span>
+                            <span><i class="fas fa-check"></i> Interactive charts</span>
+                            <span><i class="fas fa-check"></i> Custom reports</span>
+                            <span><i class="fas fa-check"></i> Export functionality</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Chart.js</span>
+                            <span>Vue.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                            <span>WebSockets</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" data-tooltip="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" data-tooltip="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <button class="project-link" data-tooltip="View Details" onclick="openProjectModal('dashboard1')">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment System Projects -->
+                <div class="project-card" data-category="payment">
+                    <div class="project-image">
+                        <div class="project-gallery">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop&auto=format" alt="Payment Gateway" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-btn" onclick="openGallery('payment1')">
+                                    <i class="fas fa-images"></i>
+                                    View Gallery
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-private">Private</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Payment Integration</div>
+                        <h3>Multi-Gateway Payment System</h3>
+                        <p>Comprehensive payment processing system supporting multiple gateways with advanced fraud detection and transaction management.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Multiple gateways</span>
+                            <span><i class="fas fa-check"></i> Fraud detection</span>
+                            <span><i class="fas fa-check"></i> Transaction logs</span>
+                            <span><i class="fas fa-check"></i> Webhook handling</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Stripe</span>
+                            <span>PayPal</span>
+                            <span>Razorpay</span>
+                            <span>Square</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link" data-tooltip="Contact for Demo" onclick="scrollToContact()">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                            <button class="project-link" data-tooltip="View Details" onclick="openProjectModal('payment1')">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- API Projects -->
+                <div class="project-card" data-category="api">
+                    <div class="project-image">
+                        <div class="project-gallery">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&auto=format" alt="REST API" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-btn" onclick="openGallery('api1')">
+                                    <i class="fas fa-images"></i>
+                                    View Gallery
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-live">Live</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">REST API</div>
+                        <h3>Scalable API Platform</h3>
+                        <p>High-performance RESTful API with comprehensive documentation, rate limiting, caching, and advanced authentication systems.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> JWT Authentication</span>
+                            <span><i class="fas fa-check"></i> Rate limiting</span>
+                            <span><i class="fas fa-check"></i> API documentation</span>
+                            <span><i class="fas fa-check"></i> Version control</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>JWT</span>
+                            <span>Swagger</span>
+                            <span>Redis</span>
+                            <span>MySQL</span>
+                            <span>Postman</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" data-tooltip="API Documentation">
+                                <i class="fas fa-book"></i>
+                            </a>
+                            <a href="#" class="project-link" data-tooltip="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <button class="project-link" data-tooltip="View Details" onclick="openProjectModal('api1')">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Projects -->
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-gallery">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&auto=format" alt="Modern Website" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-btn" onclick="openGallery('frontend1')">
+                                    <i class="fas fa-images"></i>
+                                    View Gallery
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-live">Live</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Frontend Web</div>
+                        <h3>Modern Corporate Website</h3>
+                        <p>Responsive corporate website with modern design, smooth animations, and optimized performance for excellent user experience.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Responsive design</span>
+                            <span><i class="fas fa-check"></i> Smooth animations</span>
+                            <span><i class="fas fa-check"></i> SEO optimized</span>
+                            <span><i class="fas fa-check"></i> Fast loading</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                            <span>Webpack</span>
+                            <span>Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" data-tooltip="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" data-tooltip="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <button class="project-link" data-tooltip="View Details" onclick="openProjectModal('frontend1')">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More projects can be added here -->
+                <div class="project-card" data-category="dashboard">
+                    <div class="project-image">
+                        <div class="project-gallery">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="CRM Dashboard" loading="lazy">
+                            <div class="gallery-overlay">
+                                <button class="gallery-btn" onclick="openGallery('crm1')">
+                                    <i class="fas fa-images"></i>
+                                    View Gallery
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-development">In Development</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">CRM Dashboard</div>
+                        <h3>Customer Relationship Management</h3>
+                        <p>Advanced CRM system with lead management, sales pipeline, customer communications, and detailed analytics.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Lead management</span>
+                            <span><i class="fas fa-check"></i> Sales pipeline</span>
+                            <span><i class="fas fa-check"></i> Email integration</span>
+                            <span><i class="fas fa-check"></i> Reporting system</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Vue.js</span>
+                            <span>MySQL</span>
+                            <span>Chart.js</span>
+                            <span>Mail APIs</span>
+                            <span>WebSockets</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link" data-tooltip="Coming Soon" disabled>
+                                <i class="fas fa-clock"></i>
+                            </button>
+                            <button class="project-link" data-tooltip="View Details" onclick="openProjectModal('crm1')">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta">
+                <p>Interested in seeing more projects or discussing a custom solution?</p>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-paper-plane"></i>
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-number">05.</span>
+                    Let's Work Together
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Ready to Start Your Next Project?</h3>
+                        <p>I'm always excited to work on new challenges and help bring innovative ideas to life. Whether you need a Laravel expert for your team or want to discuss a custom project, I'd love to hear from you!</p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:mugheesxana@gmail.com">mugheesxana@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone / WhatsApp</h4>
+                                <a href="tel:+923066301081">+92 306 630 1081</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <span>Lahore, Pakistan</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Availability</h4>
+                                <span>Open for new opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://wa.me/923066301081" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://www.fiverr.com/s/wk18KmA" class="social-link" target="_blank">
+                            <i class="fas fa-handshake"></i>
+                            <span>Fiverr</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mughees-rana-46b47935a/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <div class="contact-notice">
+                        <div class="notice-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="notice-content">
+                            <h4>📧 Contact Instructions</h4>
+                            <p>Since this portfolio is hosted on GitHub Pages, the contact form below won't send emails directly. Please use one of these methods to get in touch:</p>
+                            <ul>
+                                <li><strong>Email:</strong> <a href="mailto:mugheesxana@gmail.com">mugheesxana@gmail.com</a></li>
+                                <li><strong>WhatsApp:</strong> <a href="https://wa.me/923066301081" target="_blank">+92 306 630 1081</a></li>
+                                <li><strong>Fiverr:</strong> <a href="https://www.fiverr.com/s/wk18KmA" target="_blank">Visit My Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder=" " required>
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder=" " required>
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" placeholder=" " rows="6" required></textarea>
+                            <label for="message">Project Details</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-name">Muhammad Mughees</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p class="footer-description">Laravel Developer & Full Stack Engineer passionate about creating exceptional web experiences and scalable solutions.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/923066301081" target="_blank" class="footer-social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.fiverr.com/s/wk18KmA" target="_blank" class="footer-social-link">
+                            <i class="fas fa-handshake"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mughees-rana-46b47935a/" target="_blank" class="footer-social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:mugheesxana@gmail.com" class="footer-social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Laravel Development</li>
+                        <li>Full Stack Development</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Payment Integration</li>
+                        <li>API Development</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:mugheesxana@gmail.com">mugheesxana@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+923066301081">+92 306 630 1081</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Lahore, Pakistan</span>
+                    </div>
+                    <div class="footer-availability">
+                        <i class="fas fa-clock"></i>
+                        <span class="availability-status">Available for new projects</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Muhammad Mughees. All rights reserved.</p>
+                    <p>Built with <i class="fas fa-heart"></i> using modern web technologies</p>
+                </div>
+                <div class="footer-back-top">
+                    <a href="#home" class="back-to-top">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Back to Top</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Project Details</h3>
+                <button class="modal-close" onclick="closeProjectModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content gallery-modal">
+            <div class="modal-header">
+                <h3 id="galleryTitle">Project Gallery</h3>
+                <div class="gallery-counter">
+                    <span id="currentSlide">1</span> / <span id="totalSlides">1</span>
+                </div>
+                <button class="modal-close" onclick="closeGallery()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="gallery-slider">
+                <button class="gallery-nav gallery-prev" onclick="prevSlide()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="gallery-slides" id="galleryContainer">
+                    <!-- Gallery slides will be inserted here -->
+                </div>
+                <button class="gallery-nav gallery-next" onclick="nextSlide()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="gallery-dots" id="galleryDots">
+                    <!-- Dots will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Popup Widget -->
+    <div id="whatsapp-popup" class="whatsapp-popup">
+        <div class="whatsapp-popup-content">
+            <div class="whatsapp-header">
+                <div class="whatsapp-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="whatsapp-info">
+                    <h4>Muhammad Mughees</h4>
+                    <span class="online-status">Online</span>
+                </div>
+                <button class="whatsapp-close" onclick="closeWhatsAppPopup()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="whatsapp-message">
+                <div class="message-bubble">
+                    <p>👋 Hi there! Ready to bring your ideas to life?</p>
+                    <p>💻 Let's discuss your next amazing project!</p>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+            <div class="whatsapp-action">
+                <a href="https://wa.me/923066301081?text=Hi%20Muhammad!%20I%20visited%20your%20portfolio%20and%20I'm%20interested%20in%20discussing%20a%20project%20with%20you." 
+                   target="_blank" 
+                   class="whatsapp-chat-btn" 
+                   onclick="closeWhatsAppPopup()">
+                    <i class="fab fa-whatsapp"></i>
+                    Start Chat
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <div id="whatsapp-float" class="whatsapp-float" onclick="openWhatsAppPopup()">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-pulse"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
